@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://kit.fontawesome.com/79470570aa.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="ancho">
+    <div class="contenedor_logo">
+      <figure>
+        <img src="imagenes/pullrequest-logo.svg" alt="">
+      </figure>
+    </div>
+  </header>
+  <div class="boton_sandwich ancho">
+    <a href="#" id="iconomenu"><i class="fa-solid fa-bars"></i></a>
+  </div>
+  <nav class="contenedor_menu ancho" id="cajamenu">
+    <ul class="menu ancho">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Empresa</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Clientes</a></li>
+      <li><a href="#">Ubicación</a></li>
+    </ul>
+  </nav>
+
+  <!-- funciones JS -->
+  <script>
+    $("#iconomenu").click(function(){
+      $("#cajamenu").slideToggle();
+    });
+    
+  </script>
+</body>
+</html>
